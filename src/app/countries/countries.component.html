@@ -1,0 +1,12 @@
+<div>
+    <!-- <select>
+        <option *ngFor="let c of MyCountries">{{c.name}}</option>
+    </select>
+    <ul>
+        <li *ngFor="let c of MyCountries">{{c.name}}</li>
+    </ul> -->
+    <country *ngFor="let c of MyCountries" 
+    [name]="c.name" 
+    [flag]="c.flag"
+    [population]="c.population"></country>
+</div>
